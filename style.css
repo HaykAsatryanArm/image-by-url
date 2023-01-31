@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    text-decoration: none;
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box {
+    width: 32vw;
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    width: 100%;
+    height: 22vw;
+    border: 2px solid rgb(245, 159, 173);
+    border-radius: .2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    top: -1.5rem;
+    overflow: hidden;
+}
+
+.bx {
+    font-size: 6rem;
+    position: relative;
+    top: 5rem;
+    background: linear-gradient(135deg, rgb(245, 159, 173), rgb(148, 69, 200));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-text {
+    width: 65%;
+    text-align: center;
+    line-height: 1.2; 
+    font-size: 1.3rem;
+    position: relative;
+    top: 5rem;
+    background: linear-gradient(135deg, rgb(245, 159, 173), rgb(148, 69, 200));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-container {
+    width: 100%;
+    height: 2.5rem;
+    top: -.5rem;
+    position: relative;
+}
+
+#url {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+    background: none;
+    border: 2px solid rgb(245, 159, 173);
+    border-radius: .2rem;
+    color: #3a3a3a;
+}
+img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+.btn-container {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    top: .5rem;
+    opacity: 0.8;
+}
+
+#btn, button {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, rgb(245, 159, 173), rgb(148, 69, 200));
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+button {
+    border: 2px solid rgba(245, 159, 173, 0.479);
+    color: #fff;
+}
+
+.btn-container.suc {
+    opacity: 1;
+}
